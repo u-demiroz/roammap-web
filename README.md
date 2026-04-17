@@ -1,2 +1,3 @@
-# roammap
-Roam - Travel &amp; Place Discovery App
+# Roam
+
+Travel & Place Discovery App — [roammap.app](https://roammap.app)
