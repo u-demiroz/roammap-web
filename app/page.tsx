@@ -1,18 +1,14 @@
 "use client";
-import "./globals.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div style={{ minHeight: "100vh", background: "#0a0a0a" }}>
-      {/* Nav */}
       <nav style={{ padding: "20px 32px", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #1e1e1e" }}>
         <span style={{ fontWeight: 800, fontSize: 20, color: "#6366f1" }}>Roam</span>
         <Link href="/privacy" style={{ color: "#94a3b8", fontSize: 14, textDecoration: "none" }}>Privacy</Link>
       </nav>
-
-      {/* Hero */}
       <main style={{ maxWidth: 640, margin: "0 auto", padding: "80px 32px", textAlign: "center" }}>
         <motion.div initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.7 }}>
           <div style={{ fontSize: 80, marginBottom: 24 }}>🗺️</div>
@@ -38,8 +34,6 @@ export default function Home() {
             Download on App Store
           </a>
         </motion.div>
-
-        {/* Features */}
         <motion.div
           initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.7, delay: 0.2 }}
           style={{ marginTop: 80, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 16 }}
@@ -58,8 +52,6 @@ export default function Home() {
           ))}
         </motion.div>
       </main>
-
-      {/* Footer */}
       <footer style={{ textAlign: "center", padding: "40px 32px", color: "#475569", fontSize: 13, borderTop: "1px solid #1e1e1e" }}>
         <p>© 2026 Uğur Demiröz · <Link href="/privacy" style={{ color: "#64748b", textDecoration: "none" }}>Privacy Policy</Link></p>
       </footer>
