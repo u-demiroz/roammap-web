@@ -53,7 +53,7 @@ export default function Home() {
         </motion.div>
       </main>
       <footer style={{ textAlign: "center", padding: "40px 32px", color: "#475569", fontSize: 13, borderTop: "1px solid #1e1e1e" }}>
-        <p>© 2026 Uğur Demiröz · <Link href="/privacy" style={{ color: "#64748b", textDecoration: "none" }}>Privacy Policy</Link></p>
+        <p>© 2026 Uğur Demiröz · <Link href="/privacy" style={{ color: "#64748b", textDecoration: "none" }}>Gizlilik Politikası</Link></p>
       </footer>
     </div>
   );
